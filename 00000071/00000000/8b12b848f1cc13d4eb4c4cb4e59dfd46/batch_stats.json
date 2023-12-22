@@ -1,0 +1,287 @@
+{
+  "prompt": "(professional :1.0)(closeup :1.0)(photo :1.0)(of :1.0)(1 :1.0)(white :1.0)(marble :1.0)(apple :1.0)(on :1.0)(wooden :1.0)(table :1.0)(, :1.0)(detailed :1.0)(, :1.0)(film :1.0)(grain :1.0)",
+  "all_prompts": [
+    "(professional :1.0)(closeup :1.0)(photo :1.0)(of :1.0)(1 :1.0)(white :1.0)(marble :1.0)(apple :1.0)(on :1.0)(wooden :1.0)(table :1.0)(, :1.0)(detailed :1.0)(, :1.0)(film :1.0)(grain :1.0)",
+    "(professional :1.0)(closeup :1.0)(photo :1.0)(of :1.0)(1 :1.0)(white :1.0)(marble :1.0)(apple :1.0)(on :1.0)(wooden :1.0)(table :1.0)(, :1.0)(detailed :1.0)(, :1.0)(film :1.0)(grain :1.0)",
+    "(professional :1.0)(closeup :1.0)(photo :1.0)(of :1.0)(1 :1.0)(white :1.0)(marble :1.0)(apple :1.0)(on :1.0)(wooden :1.0)(table :1.0)(, :1.0)(detailed :1.0)(, :1.0)(film :1.0)(grain :1.0)",
+    "(professional :1.0)(closeup :1.0)(photo :1.0)(of :1.0)(1 :1.0)(white :1.0)(marble :1.0)(apple :1.0)(on :1.0)(wooden :1.0)(table :1.0)(, :1.0)(detailed :1.0)(, :1.0)(film :1.0)(grain :1.0)"
+  ],
+  "negative_prompt": "(worst :1.0)(quality :1.0)(, :1.0)(low :1.0)(quality :1.0)(, :1.0)(text :1.0)(, :1.0)(artist :1.0)(name :1.0)(, :1.0)(painting :1.0)(, :1.0)(artwork :1.0)(, :1.0)(illustration :1.0)(, :1.0)(drawing :1.0)(, :1.0)(3 :1.0)(d :1.0)(, :1.0)(render :1.0)",
+  "all_negative_prompts": [
+    "(worst :1.0)(quality :1.0)(, :1.0)(low :1.0)(quality :1.0)(, :1.0)(text :1.0)(, :1.0)(artist :1.0)(name :1.0)(, :1.0)(painting :1.0)(, :1.0)(artwork :1.0)(, :1.0)(illustration :1.0)(, :1.0)(drawing :1.0)(, :1.0)(3 :1.0)(d :1.0)(, :1.0)(render :1.0)",
+    "(worst :1.0)(quality :1.0)(, :1.0)(low :1.0)(quality :1.0)(, :1.0)(text :1.0)(, :1.0)(artist :1.0)(name :1.0)(, :1.0)(painting :1.0)(, :1.0)(artwork :1.0)(, :1.0)(illustration :1.0)(, :1.0)(drawing :1.0)(, :1.0)(3 :1.0)(d :1.0)(, :1.0)(render :1.0)",
+    "(worst :1.0)(quality :1.0)(, :1.0)(low :1.0)(quality :1.0)(, :1.0)(text :1.0)(, :1.0)(artist :1.0)(name :1.0)(, :1.0)(painting :1.0)(, :1.0)(artwork :1.0)(, :1.0)(illustration :1.0)(, :1.0)(drawing :1.0)(, :1.0)(3 :1.0)(d :1.0)(, :1.0)(render :1.0)",
+    "(worst :1.0)(quality :1.0)(, :1.0)(low :1.0)(quality :1.0)(, :1.0)(text :1.0)(, :1.0)(artist :1.0)(name :1.0)(, :1.0)(painting :1.0)(, :1.0)(artwork :1.0)(, :1.0)(illustration :1.0)(, :1.0)(drawing :1.0)(, :1.0)(3 :1.0)(d :1.0)(, :1.0)(render :1.0)"
+  ],
+  "seed": 3120675403,
+  "all_seeds": [
+    3120675403,
+    3120675404,
+    3120675405,
+    3120675406
+  ],
+  "subseed": 3490926741,
+  "all_subseeds": [
+    3490926741,
+    3490926742,
+    3490926743,
+    3490926744
+  ],
+  "subseed_strength": 0,
+  "width": 256,
+  "height": 256,
+  "sampler_name": "DPM++ 2M Karras",
+  "cfg_scale": 8,
+  "steps": 20,
+  "batch_size": 4,
+  "restore_faces": false,
+  "face_restoration_model": null,
+  "sd_model_name": "v1-5-pruned-emaonly",
+  "sd_model_hash": "6ce0161689",
+  "sd_vae_name": null,
+  "sd_vae_hash": null,
+  "seed_resize_from_w": -1,
+  "seed_resize_from_h": -1,
+  "denoising_strength": null,
+  "extra_generation_params": {
+    "VAE Decoder": "TAESD"
+  },
+  "index_of_first_image": 1,
+  "infotexts": [
+    "(professional :1.0)(closeup :1.0)(photo :1.0)(of :1.0)(1 :1.0)(white :1.0)(marble :1.0)(apple :1.0)(on :1.0)(wooden :1.0)(table :1.0)(, :1.0)(detailed :1.0)(, :1.0)(film :1.0)(grain :1.0)\nNegative prompt: (worst :1.0)(quality :1.0)(, :1.0)(low :1.0)(quality :1.0)(, :1.0)(text :1.0)(, :1.0)(artist :1.0)(name :1.0)(, :1.0)(painting :1.0)(, :1.0)(artwork :1.0)(, :1.0)(illustration :1.0)(, :1.0)(drawing :1.0)(, :1.0)(3 :1.0)(d :1.0)(, :1.0)(render :1.0)\nSteps: 20, Sampler: DPM++ 2M Karras, CFG scale: 8, Seed: 3120675403, Size: 256x256, Model hash: 6ce0161689, Model: v1-5-pruned-emaonly, VAE Decoder: TAESD, Version: 20230919_experimental",
+    "(professional :1.0)(closeup :1.0)(photo :1.0)(of :1.0)(1 :1.0)(white :1.0)(marble :1.0)(apple :1.0)(on :1.0)(wooden :1.0)(table :1.0)(, :1.0)(detailed :1.0)(, :1.0)(film :1.0)(grain :1.0)\nNegative prompt: (worst :1.0)(quality :1.0)(, :1.0)(low :1.0)(quality :1.0)(, :1.0)(text :1.0)(, :1.0)(artist :1.0)(name :1.0)(, :1.0)(painting :1.0)(, :1.0)(artwork :1.0)(, :1.0)(illustration :1.0)(, :1.0)(drawing :1.0)(, :1.0)(3 :1.0)(d :1.0)(, :1.0)(render :1.0)\nSteps: 20, Sampler: DPM++ 2M Karras, CFG scale: 8, Seed: 3120675403, Size: 256x256, Model hash: 6ce0161689, Model: v1-5-pruned-emaonly, VAE Decoder: TAESD, Version: 20230919_experimental",
+    "(professional :1.0)(closeup :1.0)(photo :1.0)(of :1.0)(1 :1.0)(white :1.0)(marble :1.0)(apple :1.0)(on :1.0)(wooden :1.0)(table :1.0)(, :1.0)(detailed :1.0)(, :1.0)(film :1.0)(grain :1.0)\nNegative prompt: (worst :1.0)(quality :1.0)(, :1.0)(low :1.0)(quality :1.0)(, :1.0)(text :1.0)(, :1.0)(artist :1.0)(name :1.0)(, :1.0)(painting :1.0)(, :1.0)(artwork :1.0)(, :1.0)(illustration :1.0)(, :1.0)(drawing :1.0)(, :1.0)(3 :1.0)(d :1.0)(, :1.0)(render :1.0)\nSteps: 20, Sampler: DPM++ 2M Karras, CFG scale: 8, Seed: 3120675404, Size: 256x256, Model hash: 6ce0161689, Model: v1-5-pruned-emaonly, VAE Decoder: TAESD, Version: 20230919_experimental",
+    "(professional :1.0)(closeup :1.0)(photo :1.0)(of :1.0)(1 :1.0)(white :1.0)(marble :1.0)(apple :1.0)(on :1.0)(wooden :1.0)(table :1.0)(, :1.0)(detailed :1.0)(, :1.0)(film :1.0)(grain :1.0)\nNegative prompt: (worst :1.0)(quality :1.0)(, :1.0)(low :1.0)(quality :1.0)(, :1.0)(text :1.0)(, :1.0)(artist :1.0)(name :1.0)(, :1.0)(painting :1.0)(, :1.0)(artwork :1.0)(, :1.0)(illustration :1.0)(, :1.0)(drawing :1.0)(, :1.0)(3 :1.0)(d :1.0)(, :1.0)(render :1.0)\nSteps: 20, Sampler: DPM++ 2M Karras, CFG scale: 8, Seed: 3120675405, Size: 256x256, Model hash: 6ce0161689, Model: v1-5-pruned-emaonly, VAE Decoder: TAESD, Version: 20230919_experimental",
+    "(professional :1.0)(closeup :1.0)(photo :1.0)(of :1.0)(1 :1.0)(white :1.0)(marble :1.0)(apple :1.0)(on :1.0)(wooden :1.0)(table :1.0)(, :1.0)(detailed :1.0)(, :1.0)(film :1.0)(grain :1.0)\nNegative prompt: (worst :1.0)(quality :1.0)(, :1.0)(low :1.0)(quality :1.0)(, :1.0)(text :1.0)(, :1.0)(artist :1.0)(name :1.0)(, :1.0)(painting :1.0)(, :1.0)(artwork :1.0)(, :1.0)(illustration :1.0)(, :1.0)(drawing :1.0)(, :1.0)(3 :1.0)(d :1.0)(, :1.0)(render :1.0)\nSteps: 20, Sampler: DPM++ 2M Karras, CFG scale: 8, Seed: 3120675406, Size: 256x256, Model hash: 6ce0161689, Model: v1-5-pruned-emaonly, VAE Decoder: TAESD, Version: 20230919_experimental"
+  ],
+  "styles": [],
+  "job_timestamp": "20231218210904",
+  "clip_skip": 1,
+  "is_using_inpainting_conditioning": false,
+  "version": "20230919_experimental",
+  "cma_seed": "",
+  "number_of_generations": 8,
+  "initial_population_centroid_radius": 0.75,
+  "initial_population_std": 0.5,
+  "strategy_kwargs": {
+    "weights": "superlinear"
+  },
+  "calculated_loss": 0.8004873871803284,
+  "calculated_loss_list": [
+    0.7962238788604736,
+    0.7610054016113281,
+    0.7988640069961548,
+    0.8163686990737915,
+    0.8474211692810059,
+    0.8452568054199219,
+    0.7705579400062561,
+    0.8026587963104248,
+    0.7894572615623474,
+    0.7770599126815796
+  ],
+  "pos_weights": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "neg_weights": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "new_token_attention": [
+    [
+      "professional ",
+      1.0
+    ],
+    [
+      "closeup ",
+      1.0
+    ],
+    [
+      "photo ",
+      1.0
+    ],
+    [
+      "of ",
+      1.0
+    ],
+    [
+      "1 ",
+      1.0
+    ],
+    [
+      "white ",
+      1.0
+    ],
+    [
+      "marble ",
+      1.0
+    ],
+    [
+      "apple ",
+      1.0
+    ],
+    [
+      "on ",
+      1.0
+    ],
+    [
+      "wooden ",
+      1.0
+    ],
+    [
+      "table ",
+      1.0
+    ],
+    [
+      ", ",
+      1.0
+    ],
+    [
+      "detailed ",
+      1.0
+    ],
+    [
+      ", ",
+      1.0
+    ],
+    [
+      "film ",
+      1.0
+    ],
+    [
+      "grain ",
+      1.0
+    ]
+  ],
+  "new_neg_token_attention": [
+    [
+      "worst ",
+      1.0
+    ],
+    [
+      "quality ",
+      1.0
+    ],
+    [
+      ", ",
+      1.0
+    ],
+    [
+      "low ",
+      1.0
+    ],
+    [
+      "quality ",
+      1.0
+    ],
+    [
+      ", ",
+      1.0
+    ],
+    [
+      "text ",
+      1.0
+    ],
+    [
+      ", ",
+      1.0
+    ],
+    [
+      "artist ",
+      1.0
+    ],
+    [
+      "name ",
+      1.0
+    ],
+    [
+      ", ",
+      1.0
+    ],
+    [
+      "painting ",
+      1.0
+    ],
+    [
+      ", ",
+      1.0
+    ],
+    [
+      "artwork ",
+      1.0
+    ],
+    [
+      ", ",
+      1.0
+    ],
+    [
+      "illustration ",
+      1.0
+    ],
+    [
+      ", ",
+      1.0
+    ],
+    [
+      "drawing ",
+      1.0
+    ],
+    [
+      ", ",
+      1.0
+    ],
+    [
+      "3 ",
+      1.0
+    ],
+    [
+      "d ",
+      1.0
+    ],
+    [
+      ", ",
+      1.0
+    ],
+    [
+      "render ",
+      1.0
+    ]
+  ],
+  "flip_execution_seconds": 0.9195263385772705,
+  "process_images_seconds": 6.9287707805633545
+}
