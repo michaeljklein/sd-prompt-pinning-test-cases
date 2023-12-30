@@ -101,6 +101,7 @@ First hyperbatch test
 - Size-limiter: `0.5`
 - Target image from first batch: `hyperbatch_car_example.png`
 - Seed: `586335534`
+- Sampler: `DPM++ SDE Karras - Hyperbatch`
 - Model: `v1-5-pruned-emaonly`
 
 
