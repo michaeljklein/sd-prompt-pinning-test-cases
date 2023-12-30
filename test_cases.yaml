@@ -66,3 +66,18 @@ Loss pinning test:
   - Target image from first batch: "blue_marble_apple.png"
   - From: "[https://civitai.com/images/1747029](https://civitai.com/images/1747029)"
 
+First hyperbatch test:
+  - Run: "00000003"
+  - Prompt: "test, example, photograph, best"
+  - Negative prompt: "worst, error, meh"
+  - Batch size: "8"
+  - CFG: "7"
+  - Size: "512x512"
+  - Steps: "20"
+  - Initial STD: "0.05"
+  - Initial centroid radius: "0.15"
+  - Size-limiter: "0.5"
+  - Target image from first batch: "hyperbatch_car_example.png"
+  - Seed: "586335534"
+  - Model: "v1-5-pruned-emaonly"
+

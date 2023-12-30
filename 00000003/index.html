@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://unpkg.com/tabulator-tables@5.5.2/dist/css/tabulator.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.5.2/dist/js/tabulator.min.js"></script>
+</head>
+<body>
+<img src='cma_plot.png' title='CMA Stats'>
+<br>
+<div id="main-table"></div>
+<div>Loading table may take some time. Check the 'Sources' tab, if available, to see images loading.</div>
+<script type="text/javascript">
+  function main() {
+    var table = new Tabulator("#main-table", {
+        layout:"fitDataFill",
+        responsiveLayout:"collapse",
+        pagination:true,
+        paginationSize:5,
+        paginationSizeSelector:[5, 10, 25, 50, 100, true],
+        columns:[
+        {formatter:"responsiveCollapse", width:30, minWidth:30, hozAlign:"center", resizable:true, headerSort:true},
+        {title:"Timestamp", field:"job_timestamp", width:200, sorter:"alphanum"},
+        {title:"Loss", field:"calculated_loss", hozAlign:"left", sorter:"number", width:150},
+        {title:"Generation", field:"generation_number", hozAlign:"left", sorter:"number", width:50},
+        {title:"Instance", field:"instance_number", hozAlign:"left", sorter:"number", width:50},
+        {title:"GIF", field:"gif", width:512, formatter:"image", formatterParams:{
+            width:"512px",
+            height:"512px",
+            urlPrefix:"",
+            urlSuffix:"/summary.gif",
+        }},
+        {title:"Loss Plot", field:"loss_plot", width:512, formatter:"image", formatterParams:{
+            width:"512px",
+            height:"512px",
+            urlPrefix:"",
+            urlSuffix:"/loss_plot.png",
+        }},
+        {title:"Images", field:"images", width:512, formatter:"html"},
+        {title:"Prompt", field:"prompt", width:200, sorter:"alphanum"},
+        ],
+    });
+
+    table.on("tableBuilt", () => {
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.312140480476696",
+        "generation_number": "0",
+        "instance_number": "0",
+        "gif": "00000000/8acbe097600d24598641359adb007d26",
+        "loss_plot": "00000000/8acbe097600d24598641359adb007d26",
+        "images": "00000000/8acbe097600d24598641359adb007d26",
+        "prompt": "(test :1.0418029751623687)(, :0.9600011986992725)(example :1.0210582122558134)(, :1.088620102022873)(photograph :0.9825138573401127)(, :0.8754363003833299)(best :1.0372474995491368)",
+        "neg_prompt": "(worst :1.0642043710572993)(, :1.0305374978594373)(error :1.1048270263340394)(, :1.0593366745281962)(meh :0.8610219668845045)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.32869454339045",
+        "generation_number": "1",
+        "instance_number": "0",
+        "gif": "00000001/316f17b408608ab5c786b0c03a5cfa7f",
+        "loss_plot": "00000001/316f17b408608ab5c786b0c03a5cfa7f",
+        "images": "00000001/316f17b408608ab5c786b0c03a5cfa7f",
+        "prompt": "(test :0.9969849642578471)(, :0.9393366255504941)(example :0.9436610645599132)(, :1.0228775590001344)(photograph :1.0069713855533116)(, :0.9468112592213891)(best :1.0114798921845538)",
+        "neg_prompt": "(worst :1.0518033837893452)(, :1.0472758154884219)(error :1.0818268017614288)(, :0.9600266271050699)(meh :0.78538842880837)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.301563073176244",
+        "generation_number": "2",
+        "instance_number": "0",
+        "gif": "00000002/256c9b0ba73b58a670477f4fb065d89c",
+        "loss_plot": "00000002/256c9b0ba73b58a670477f4fb065d89c",
+        "images": "00000002/256c9b0ba73b58a670477f4fb065d89c",
+        "prompt": "(test :1.0549027669494133)(, :0.9586319986479813)(example :1.0750306155431026)(, :1.0904239333830925)(photograph :1.0206960969565098)(, :0.8939545676560762)(best :1.026925828028271)",
+        "neg_prompt": "(worst :1.1281838595534006)(, :0.9993176940768969)(error :1.1570199271856623)(, :1.107572379536376)(meh :0.8656218644527541)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.298830196967035",
+        "generation_number": "3",
+        "instance_number": "0",
+        "gif": "00000003/e81f0381eae594c811bb420864df3d60",
+        "loss_plot": "00000003/e81f0381eae594c811bb420864df3d60",
+        "images": "00000003/e81f0381eae594c811bb420864df3d60",
+        "prompt": "(test :0.9480962723497551)(, :0.9706121447387027)(example :1.0921374411926847)(, :1.1242450177809518)(photograph :0.9857778600707835)(, :1.008409788665107)(best :1.0277759214116406)",
+        "neg_prompt": "(worst :1.1580942551086657)(, :1.0238075714681456)(error :1.1980556971789134)(, :1.1899486238657724)(meh :0.8435020434112063)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.258638368610026",
+        "generation_number": "4",
+        "instance_number": "0",
+        "gif": "00000004/f6165aea9c93186ad731bd4254eea9b6",
+        "loss_plot": "00000004/f6165aea9c93186ad731bd4254eea9b6",
+        "images": "00000004/f6165aea9c93186ad731bd4254eea9b6",
+        "prompt": "(test :0.9127355071145887)(, :1.0135642592743683)(example :1.031065335905947)(, :1.0973654593237556)(photograph :0.968970468857425)(, :1.0512198152956664)(best :0.9946532119750642)",
+        "neg_prompt": "(worst :1.0974178831398609)(, :1.0128937541298042)(error :1.2431427070236347)(, :1.2157213125202224)(meh :0.788438030446141)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.339052256068733",
+        "generation_number": "5",
+        "instance_number": "0",
+        "gif": "00000005/630b22fd5d3f75c0bb8adbb6f1d22e1d",
+        "loss_plot": "00000005/630b22fd5d3f75c0bb8adbb6f1d22e1d",
+        "images": "00000005/630b22fd5d3f75c0bb8adbb6f1d22e1d",
+        "prompt": "(test :0.8935602973098858)(, :1.1020219359880183)(example :1.0433788595684408)(, :1.103937591031109)(photograph :0.9920316402309046)(, :0.9772322684375957)(best :0.9504063742010228)",
+        "neg_prompt": "(worst :1.0236224158660545)(, :0.9713717040952343)(error :1.2366815569034162)(, :1.2560541854999698)(meh :0.716685565625224)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.216033344325123",
+        "generation_number": "6",
+        "instance_number": "0",
+        "gif": "00000006/823186efe1c490ca9903cf1ff8ddbba5",
+        "loss_plot": "00000006/823186efe1c490ca9903cf1ff8ddbba5",
+        "images": "00000006/823186efe1c490ca9903cf1ff8ddbba5",
+        "prompt": "(test :0.9456438197806027)(, :1.0008912439102915)(example :1.0198192783435034)(, :1.129936039037569)(photograph :0.9266460621552428)(, :1.1501836321691452)(best :1.0429838971759897)",
+        "neg_prompt": "(worst :1.1228212843385459)(, :0.975195431982532)(error :1.2141251152213623)(, :1.1033772122040322)(meh :0.7794712925094017)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.197238441218698",
+        "generation_number": "7",
+        "instance_number": "0",
+        "gif": "00000007/27c9c416df535d42559b6e2bc5a0f2ba",
+        "loss_plot": "00000007/27c9c416df535d42559b6e2bc5a0f2ba",
+        "images": "00000007/27c9c416df535d42559b6e2bc5a0f2ba",
+        "prompt": "(test :1.0442925725691066)(, :1.001484546280574)(example :1.0480252780237405)(, :1.0879505535188911)(photograph :0.973732137843331)(, :1.1488926904938512)(best :1.0739679380172615)",
+        "neg_prompt": "(worst :1.037710078393047)(, :0.9794650849657597)(error :1.243920207033517)(, :1.1254453988593986)(meh :0.8483459775355954)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.215014590327584",
+        "generation_number": "8",
+        "instance_number": "0",
+        "gif": "00000008/338c548dd537a7dcd1bc935b8faa877d",
+        "loss_plot": "00000008/338c548dd537a7dcd1bc935b8faa877d",
+        "images": "00000008/338c548dd537a7dcd1bc935b8faa877d",
+        "prompt": "(test :1.0998735863078783)(, :0.9480509669086709)(example :0.9419477663593913)(, :1.0988071170912481)(photograph :0.9713727535069496)(, :1.1771006726078508)(best :1.0387320256839248)",
+        "neg_prompt": "(worst :1.0489430759994611)(, :0.9348086378341253)(error :1.2438290080862036)(, :1.0729209239708595)(meh :0.8825818497363251)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.199491870969087",
+        "generation_number": "9",
+        "instance_number": "0",
+        "gif": "00000009/7670021ca894387cce307b9df353f85a",
+        "loss_plot": "00000009/7670021ca894387cce307b9df353f85a",
+        "images": "00000009/7670021ca894387cce307b9df353f85a",
+        "prompt": "(test :1.0517138689004348)(, :0.9975377064812785)(example :1.0174636856242376)(, :1.1320649659607884)(photograph :1.0220092438087067)(, :1.1329866745254589)(best :1.0543677952297792)",
+        "neg_prompt": "(worst :1.0289103389626049)(, :1.0131193337203221)(error :1.278300959796044)(, :1.1345978542247868)(meh :0.8310437155743327)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.228727451063357",
+        "generation_number": "10",
+        "instance_number": "0",
+        "gif": "00000010/c6c6952880bd9b1f73b30a431bc286d5",
+        "loss_plot": "00000010/c6c6952880bd9b1f73b30a431bc286d5",
+        "images": "00000010/c6c6952880bd9b1f73b30a431bc286d5",
+        "prompt": "(test :1.0135762647005706)(, :0.9550664235482161)(example :1.051947370517915)(, :1.0275475852820475)(photograph :1.0060248254831898)(, :1.124663694554363)(best :1.0635694234714261)",
+        "neg_prompt": "(worst :1.107987613494794)(, :1.0387057887566977)(error :1.1837650082755282)(, :1.177447438184947)(meh :0.9029457605661511)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.264787757424333",
+        "generation_number": "11",
+        "instance_number": "0",
+        "gif": "00000011/b37724529accfafd0aad1e265218a980",
+        "loss_plot": "00000011/b37724529accfafd0aad1e265218a980",
+        "images": "00000011/b37724529accfafd0aad1e265218a980",
+        "prompt": "(test :1.0460282936721081)(, :1.1314891504377993)(example :0.976181782682686)(, :0.985529495318275)(photograph :0.9064962408579422)(, :1.1189305406270542)(best :1.1077064605539786)",
+        "neg_prompt": "(worst :1.0288269204544394)(, :1.0104580609596894)(error :1.237461234796229)(, :1.1498826296041809)(meh :0.9880379085905349)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.29644386249855",
+        "generation_number": "12",
+        "instance_number": "0",
+        "gif": "00000012/1b01ec968cd2799d0236e4e5a1d1d778",
+        "loss_plot": "00000012/1b01ec968cd2799d0236e4e5a1d1d778",
+        "images": "00000012/1b01ec968cd2799d0236e4e5a1d1d778",
+        "prompt": "(test :1.0460738442608737)(, :0.9392971657444756)(example :0.9307028860940023)(, :1.092082314146479)(photograph :1.0871019737788148)(, :1.33650685153241)(best :1.0929018024541093)",
+        "neg_prompt": "(worst :0.929726634044678)(, :0.8638644686369581)(error :1.348628572375973)(, :1.1518287499513384)(meh :0.7409941380236906)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.24279978410049",
+        "generation_number": "13",
+        "instance_number": "0",
+        "gif": "00000013/c31888e1c48f53d2b3069522f1c80b1d",
+        "loss_plot": "00000013/c31888e1c48f53d2b3069522f1c80b1d",
+        "images": "00000013/c31888e1c48f53d2b3069522f1c80b1d",
+        "prompt": "(test :0.976558132835487)(, :0.9168652892649732)(example :1.0165589641616481)(, :1.0839807228136489)(photograph :1.0008520666952287)(, :1.2608681530498431)(best :1.0625079200269518)",
+        "neg_prompt": "(worst :1.0961608243850045)(, :0.914633655799112)(error :1.2894700915690425)(, :1.1391447515458997)(meh :0.8828103396672247)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.27062231487415",
+        "generation_number": "14",
+        "instance_number": "0",
+        "gif": "00000014/c3fb900b238491ac54e479676c85a44d",
+        "loss_plot": "00000014/c3fb900b238491ac54e479676c85a44d",
+        "images": "00000014/c3fb900b238491ac54e479676c85a44d",
+        "prompt": "(test :1.0291038794650822)(, :1.0316903910797908)(example :0.957884440891008)(, :1.0523207032712423)(photograph :0.9997688592779991)(, :1.2359353838815845)(best :1.122649219870157)",
+        "neg_prompt": "(worst :0.9666351220891534)(, :0.9924844419951016)(error :1.1684694733156866)(, :1.0821478534987294)(meh :0.871129904021956)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.202570322285283",
+        "generation_number": "15",
+        "instance_number": "0",
+        "gif": "00000015/e21cc4e4ef2ba2a306227a546eaba343",
+        "loss_plot": "00000015/e21cc4e4ef2ba2a306227a546eaba343",
+        "images": "00000015/e21cc4e4ef2ba2a306227a546eaba343",
+        "prompt": "(test :1.0972890258170374)(, :1.0950869419623401)(example :0.980291537136035)(, :1.1325632186215286)(photograph :0.9633766944461717)(, :1.1318708199144476)(best :1.0396751465945253)",
+        "neg_prompt": "(worst :0.9883315223415474)(, :1.0349623028636905)(error :1.2285412754160085)(, :1.1492310850207508)(meh :0.9272658819765635)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.183845895499104",
+        "generation_number": "16",
+        "instance_number": "0",
+        "gif": "00000016/a54232871a63361397e118f14baf544a",
+        "loss_plot": "00000016/a54232871a63361397e118f14baf544a",
+        "images": "00000016/a54232871a63361397e118f14baf544a",
+        "prompt": "(test :1.0630036618485093)(, :0.9666829686583375)(example :1.0578148793467028)(, :1.1263031253900266)(photograph :1.0307632079594815)(, :1.2081250335870761)(best :1.0566364871207883)",
+        "neg_prompt": "(worst :1.087840403074311)(, :1.057451422256446)(error :1.3523145928854714)(, :1.0415646328432953)(meh :0.8520852450062188)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.32038596970638",
+        "generation_number": "17",
+        "instance_number": "0",
+        "gif": "00000017/8557510697542253b3d436ddb46f3667",
+        "loss_plot": "00000017/8557510697542253b3d436ddb46f3667",
+        "images": "00000017/8557510697542253b3d436ddb46f3667",
+        "prompt": "(test :0.9646191376719562)(, :1.0549293428408988)(example :1.050986744038883)(, :1.1476406371529202)(photograph :0.9415327524714395)(, :1.3156573516116603)(best :1.1060320725482333)",
+        "neg_prompt": "(worst :1.2038847747398653)(, :0.9794197443799465)(error :1.4369093154968495)(, :1.0205936265498123)(meh :0.8158860134562521)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.221647449895723",
+        "generation_number": "18",
+        "instance_number": "0",
+        "gif": "00000018/cfeae9dfa9d3bd451be32ec1af4d5b45",
+        "loss_plot": "00000018/cfeae9dfa9d3bd451be32ec1af4d5b45",
+        "images": "00000018/cfeae9dfa9d3bd451be32ec1af4d5b45",
+        "prompt": "(test :0.96745347564194)(, :0.9005929775989249)(example :1.1989182513593344)(, :1.1459673144654827)(photograph :0.9467380572140337)(, :1.310549239597438)(best :1.0749227730516058)",
+        "neg_prompt": "(worst :1.1139375270733838)(, :1.0766696878376638)(error :1.380607175694109)(, :1.0684216823084842)(meh :0.8365154541204131)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.41485439430448",
+        "generation_number": "19",
+        "instance_number": "0",
+        "gif": "00000019/25cc053199ed015a02147cfb098f8443",
+        "loss_plot": "00000019/25cc053199ed015a02147cfb098f8443",
+        "images": "00000019/25cc053199ed015a02147cfb098f8443",
+        "prompt": "(test :1.0269147603651703)(, :1.1231405821804674)(example :1.1075767155205605)(, :1.1340725242799696)(photograph :0.8995558120810259)(, :1.3372808120085748)(best :1.0846123869692896)",
+        "neg_prompt": "(worst :1.1325932386271793)(, :0.9791443729172137)(error :1.3967129600533192)(, :1.0212633820390995)(meh :0.9360477310818982)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.184064733119346",
+        "generation_number": "20",
+        "instance_number": "0",
+        "gif": "00000020/ebbf8f8b4b1bdb729f1b3dc5580d02d0",
+        "loss_plot": "00000020/ebbf8f8b4b1bdb729f1b3dc5580d02d0",
+        "images": "00000020/ebbf8f8b4b1bdb729f1b3dc5580d02d0",
+        "prompt": "(test :1.0304479781150073)(, :0.9769005287724898)(example :1.1604807545672122)(, :1.0271678387425012)(photograph :1.0804146750807755)(, :1.1351462088270825)(best :0.974550895705568)",
+        "neg_prompt": "(worst :1.053145812410281)(, :0.9111323163543399)(error :1.3969700033326604)(, :1.0094341169884156)(meh :0.7998296382562511)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.311396875987345",
+        "generation_number": "21",
+        "instance_number": "0",
+        "gif": "00000021/41cbda611beaa39d14c8eefe17f509be",
+        "loss_plot": "00000021/41cbda611beaa39d14c8eefe17f509be",
+        "images": "00000021/41cbda611beaa39d14c8eefe17f509be",
+        "prompt": "(test :1.0742131451911192)(, :0.8917646618747512)(example :0.9879961426570684)(, :1.1262959788200728)(photograph :1.0673439472150248)(, :1.0569846779096674)(best :0.9846641819567565)",
+        "neg_prompt": "(worst :1.106540775558497)(, :1.076053577868238)(error :1.4485757766212006)(, :1.074553626159762)(meh :0.8406932842585121)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.36068658567139",
+        "generation_number": "22",
+        "instance_number": "0",
+        "gif": "00000022/67f8b1b015c649997b01f6d615138b3b",
+        "loss_plot": "00000022/67f8b1b015c649997b01f6d615138b3b",
+        "images": "00000022/67f8b1b015c649997b01f6d615138b3b",
+        "prompt": "(test :1.017818694224888)(, :0.9847983452048772)(example :0.9805333123240613)(, :1.1138616975060789)(photograph :0.9996574898946293)(, :1.3326524650029938)(best :1.1029688728018214)",
+        "neg_prompt": "(worst :1.109858231892155)(, :1.0697007803419534)(error :1.347208768883659)(, :1.0930256106153793)(meh :0.7495063538111002)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.14448342069673",
+        "generation_number": "23",
+        "instance_number": "0",
+        "gif": "00000023/6834221b89d763a58c4a39141444470d",
+        "loss_plot": "00000023/6834221b89d763a58c4a39141444470d",
+        "images": "00000023/6834221b89d763a58c4a39141444470d",
+        "prompt": "(test :1.0139395063015109)(, :0.8875844896816747)(example :1.0531440931327967)(, :1.1927598106102324)(photograph :1.1267477552204233)(, :1.19466180922278)(best :1.1143863086288004)",
+        "neg_prompt": "(worst :1.0891993423368416)(, :1.0212293788636106)(error :1.3402142338999785)(, :1.1429846094658418)(meh :0.9136524548374696)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.205691304665862",
+        "generation_number": "24",
+        "instance_number": "0",
+        "gif": "00000024/e35b07f4b92633df8b42103ced16fb6f",
+        "loss_plot": "00000024/e35b07f4b92633df8b42103ced16fb6f",
+        "images": "00000024/e35b07f4b92633df8b42103ced16fb6f",
+        "prompt": "(test :1.1826111006529105)(, :1.0152111265907124)(example :0.9883323933769943)(, :1.1012540942397175)(photograph :1.158364495443668)(, :1.2333529915492734)(best :1.1419883734206544)",
+        "neg_prompt": "(worst :1.0477319351659247)(, :1.1184479646269847)(error :1.4003724503736215)(, :1.1740684460671893)(meh :0.9950808416745777)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.172074466537595",
+        "generation_number": "25",
+        "instance_number": "0",
+        "gif": "00000025/5be501ee2c8985509455f3898899a167",
+        "loss_plot": "00000025/5be501ee2c8985509455f3898899a167",
+        "images": "00000025/5be501ee2c8985509455f3898899a167",
+        "prompt": "(test :1.1313424262683958)(, :0.9112953664240053)(example :1.1153015787428682)(, :1.324979750034394)(photograph :1.2432849365308325)(, :1.1686248866737585)(best :1.2027574970690185)",
+        "neg_prompt": "(worst :1.1094672187474925)(, :1.0342703816263241)(error :1.3276468661136904)(, :1.2098046192632377)(meh :0.8451791910926214)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.168974633744362",
+        "generation_number": "26",
+        "instance_number": "0",
+        "gif": "00000026/1df7a87bf2d8ce0cc992c5ffe90d4169",
+        "loss_plot": "00000026/1df7a87bf2d8ce0cc992c5ffe90d4169",
+        "images": "00000026/1df7a87bf2d8ce0cc992c5ffe90d4169",
+        "prompt": "(test :0.9845471880057889)(, :0.9125699502311007)(example :0.9988558884166707)(, :1.1725459136179803)(photograph :1.088588007928573)(, :1.1690824126574595)(best :1.1965205317509575)",
+        "neg_prompt": "(worst :1.160954134302834)(, :1.0237223498261265)(error :1.2481454269647698)(, :1.1178411332426923)(meh :0.9773383266019359)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.18104002116948",
+        "generation_number": "27",
+        "instance_number": "0",
+        "gif": "00000027/d20acf246cc6cc5d2c2bfee3cb8a3bc6",
+        "loss_plot": "00000027/d20acf246cc6cc5d2c2bfee3cb8a3bc6",
+        "images": "00000027/d20acf246cc6cc5d2c2bfee3cb8a3bc6",
+        "prompt": "(test :0.8480437725527536)(, :0.8872811538920022)(example :1.0984849700032835)(, :1.1198421852755955)(photograph :1.0898499865163633)(, :1.1453635955577945)(best :0.9852893013459504)",
+        "neg_prompt": "(worst :1.0333295389190515)(, :1.0472581131766945)(error :1.1666102827234806)(, :1.0793191278793444)(meh :0.9406157788915052)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.2494115557851",
+        "generation_number": "28",
+        "instance_number": "0",
+        "gif": "00000028/d2ef9bdaddd91f398cce3e3023982956",
+        "loss_plot": "00000028/d2ef9bdaddd91f398cce3e3023982956",
+        "images": "00000028/d2ef9bdaddd91f398cce3e3023982956",
+        "prompt": "(test :1.0189380734691105)(, :0.8750272792318468)(example :1.214600038945661)(, :1.0709040507560545)(photograph :1.1410617016194837)(, :1.090272166623602)(best :0.9793020202138288)",
+        "neg_prompt": "(worst :1.0153600672976184)(, :1.1100334058432748)(error :1.3118634403022504)(, :1.2036654903427355)(meh :0.9706247545753789)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.17001423498425",
+        "generation_number": "29",
+        "instance_number": "0",
+        "gif": "00000029/f76abff8e48c25b221d3233a49d90a8d",
+        "loss_plot": "00000029/f76abff8e48c25b221d3233a49d90a8d",
+        "images": "00000029/f76abff8e48c25b221d3233a49d90a8d",
+        "prompt": "(test :1.1625897549416817)(, :0.8663662500993715)(example :0.9769764914429864)(, :1.1873749109935452)(photograph :1.254514885543316)(, :1.189026444036969)(best :1.0905249441278249)",
+        "neg_prompt": "(worst :1.0089558233928733)(, :0.9445273971866148)(error :1.4203292153513118)(, :1.2196306088751687)(meh :0.8343442931504066)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.19153995939802",
+        "generation_number": "30",
+        "instance_number": "0",
+        "gif": "00000030/242ee03b8a97a2c60b9fe28bfff452e2",
+        "loss_plot": "00000030/242ee03b8a97a2c60b9fe28bfff452e2",
+        "images": "00000030/242ee03b8a97a2c60b9fe28bfff452e2",
+        "prompt": "(test :1.086568826996479)(, :0.882259202826847)(example :1.1213210395866795)(, :1.2151376135583)(photograph :1.1493598711558066)(, :1.1293585388688945)(best :1.157582766300242)",
+        "neg_prompt": "(worst :1.0139307563234634)(, :0.9673900944767523)(error :1.37068878596058)(, :1.1268579303312964)(meh :0.878526242197508)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.227950163075697",
+        "generation_number": "31",
+        "instance_number": "0",
+        "gif": "00000031/8de841277b64809e36ce40dee19a9ee7",
+        "loss_plot": "00000031/8de841277b64809e36ce40dee19a9ee7",
+        "images": "00000031/8de841277b64809e36ce40dee19a9ee7",
+        "prompt": "(test :0.9699624463377271)(, :0.8955119615371048)(example :1.0706062002257857)(, :1.1034399293669561)(photograph :1.1266209631471868)(, :1.2833898739315033)(best :1.006667866750492)",
+        "neg_prompt": "(worst :1.1609290355914226)(, :0.9902442516247634)(error :1.3952396049525657)(, :1.1724700695629007)(meh :0.8867715928166682)",
+      });
+
+      table.addRow({
+        "job_timestamp": "20231229234128",
+        "calculated_loss": "19.185709578627527",
+        "generation_number": "32",
+        "instance_number": "0",
+        "gif": "00000032/dd07bbfe21437e8fd7b13198fc729d12",
+        "loss_plot": "00000032/dd07bbfe21437e8fd7b13198fc729d12",
+        "images": "00000032/dd07bbfe21437e8fd7b13198fc729d12",
+        "prompt": "(test :1.0600265881918247)(, :0.8699798565702507)(example :1.0830781427255507)(, :1.1722659572386696)(photograph :1.1081873519512049)(, :1.2190900857972324)(best :1.164492835405409)",
+        "neg_prompt": "(worst :1.0992255083296438)(, :1.0357914468941585)(error :1.26533647055314)(, :1.1492997442135529)(meh :0.9517238560774819)",
+      });
+
+    });
+  }
+  window.onload = main;
+</script>
+</body>
+</html>
