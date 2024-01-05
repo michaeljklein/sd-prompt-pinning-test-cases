@@ -103,6 +103,45 @@ First hyperbatch test
 - Seed: `586335534`
 - Sampler: `DPM++ SDE Karras - Hyperbatch`
 - Model: `v1-5-pruned-emaonly`
+- Timing notes: `Time taken: 30 min. 55.4 sec.`
+
+First no-fork hyperbatch test
+- Run: `00000102`
+- Prompt: `A person on a snowboard flies high in the air, while someone down below takes a professional picture.`
+- Negative prompt: ``
+- Batch size: `8`
+- CFG: `7`
+- Size: `512x512`
+- Steps: `20`
+- Initial STD: `0.1`
+- Initial centroid radius: `0.1`
+- Size-limiter: `0.5`
+- Target image from first batch: `snowboard_test_image.png`
+- Seed: `726671978`
+- Sampler: `DPM++ SDE Karras - Hyperbatch`
+- Model: `v1-5-pruned-emaonly`
+- Timing notes: `Time taken: 40 min. 13.5 sec.`
+- Notes: `lambda_ parameter appears to have malfunctioned: generations only have one individual`
+
+Explicit CMA lambda test
+- Run: `00000106`
+- Prompt: `a vintage red truck parked in a desert landscape. The truck is positioned in the foreground, while a mountain range serves as the backdrop. The sky above the mountains is filled with clouds, creating a picturesque and serene atmosphere. The truck appears to be old and rusted, adding to the sense of age and history in the scene. The combination of the vintage truck, the desert setting, and the majestic mountains creates a visually striking and memorable image.
+a breathtaking landscape during sunset. The sky is painted with hues of orange, red, and blue, dotted with fluffy clouds. In the foreground, there's a rustic, vintage red truck, possibly from the mid-20th century, abandoned amidst a field of golden grass. The background features majestic mountains, some of which have snow-capped peaks. The entire scene evokes a sense of nostalgia and serenity.`
+- Negative prompt: ``
+- Batch size: `8`
+- CFG: `7`
+- Size: `768x512`
+- Steps: `16`
+- Initial STD: `0.1`
+- Initial centroid radius: `0.1`
+- Size-limiter: `0.5`
+- CMA lambda_: `2`
+- Target image from first batch: `truck_landscape_test.png`
+- Seed: `1461702216`
+- Sampler: `DPM++ SDE Karras - Hyperbatch`
+- Model: `v1-5-pruned-emaonly`
+- Notes: `lambda_ parameter appears to have malfunctioned: generations only have one individual
+Prompt modified from: https://laion.ai/documents/llava_cogvlm_pop.html`
 
 
 ## References

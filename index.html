@@ -251,6 +251,119 @@
           <li>
             Model: <code>v1-5-pruned-emaonly</code>
           </li>
+          <li>
+            Timing notes: <code>Time taken: 30 min. 55.4 sec.</code>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        First no-fork hyperbatch test
+        <ul>
+          <li>
+            Run: <a href="./00000102/index.html">./00000102/index.html</a>
+          </li>
+          <li>
+            Prompt: <code>A person on a snowboard flies high in the air, while someone down below takes a professional picture.</code>
+          </li>
+          <li>
+            Negative prompt: <code></code>
+          </li>
+          <li>
+            Batch size: <code>8</code>
+          </li>
+          <li>
+            CFG: <code>7</code>
+          </li>
+          <li>
+            Size: <code>512x512</code>
+          </li>
+          <li>
+            Steps: <code>20</code>
+          </li>
+          <li>
+            Initial STD: <code>0.1</code>
+          </li>
+          <li>
+            Initial centroid radius: <code>0.1</code>
+          </li>
+          <li>
+            Size-limiter: <code>0.5</code>
+          </li>
+          <li>
+            Target image from first batch: <code>snowboard_test_image.png</code>
+          </li>
+          <li>
+            Seed: <code>726671978</code>
+          </li>
+          <li>
+            Sampler: <code>DPM++ SDE Karras - Hyperbatch</code>
+          </li>
+          <li>
+            Model: <code>v1-5-pruned-emaonly</code>
+          </li>
+          <li>
+            Timing notes: <code>Time taken: 40 min. 13.5 sec.</code>
+          </li>
+          <li>
+            Notes: <code>lambda_ parameter appears to have malfunctioned: generations only have one individual</code>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        Explicit CMA lambda test
+        <ul>
+          <li>
+            Run: <a href="./00000106/index.html">./00000106/index.html</a>
+          </li>
+          <li>
+            Prompt: <code>a vintage red truck parked in a desert landscape. The truck is positioned in the foreground, while a mountain range serves as the backdrop. The sky above the mountains is filled with clouds, creating a picturesque and serene atmosphere. The truck appears to be old and rusted, adding to the sense of age and history in the scene. The combination of the vintage truck, the desert setting, and the majestic mountains creates a visually striking and memorable image.
+a breathtaking landscape during sunset. The sky is painted with hues of orange, red, and blue, dotted with fluffy clouds. In the foreground, there's a rustic, vintage red truck, possibly from the mid-20th century, abandoned amidst a field of golden grass. The background features majestic mountains, some of which have snow-capped peaks. The entire scene evokes a sense of nostalgia and serenity.</code>
+          </li>
+          <li>
+            Negative prompt: <code></code>
+          </li>
+          <li>
+            Batch size: <code>8</code>
+          </li>
+          <li>
+            CFG: <code>7</code>
+          </li>
+          <li>
+            Size: <code>768x512</code>
+          </li>
+          <li>
+            Steps: <code>16</code>
+          </li>
+          <li>
+            Initial STD: <code>0.1</code>
+          </li>
+          <li>
+            Initial centroid radius: <code>0.1</code>
+          </li>
+          <li>
+            Size-limiter: <code>0.5</code>
+          </li>
+          <li>
+            CMA lambda_: <code>2</code>
+          </li>
+          <li>
+            Target image from first batch: <code>truck_landscape_test.png</code>
+          </li>
+          <li>
+            Seed: <code>1461702216</code>
+          </li>
+          <li>
+            Sampler: <code>DPM++ SDE Karras - Hyperbatch</code>
+          </li>
+          <li>
+            Model: <code>v1-5-pruned-emaonly</code>
+          </li>
+          <li>
+            Notes: <code>lambda_ parameter appears to have malfunctioned: generations only have one individual
+Prompt modified from: https://laion.ai/documents/llava_cogvlm_pop.html</code>
+          </li>
         </ul>
       </li>
 
